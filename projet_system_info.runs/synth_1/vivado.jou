@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed May  4 13:24:53 2022
+# Process ID: 3767
+# Current directory: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.runs/synth_1
+# Command line: vivado -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.runs/synth_1/CPU.vds
+# Journal file: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.runs/synth_1/vivado.jou
+# Running On: fomys, OS: Linux, CPU Frequency: 4219.149 MHz, CPU Physical cores: 4, Host memory: 33451 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace

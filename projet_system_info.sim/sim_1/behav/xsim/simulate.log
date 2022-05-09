@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Error: Write in register failed for test 0
+Time: 30 ns  Iteration: 0  Process: /registers_tb/main  File: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sim_1/new/registers_tb.vhd
+Error: Write in register failed for test 1
+Time: 50 ns  Iteration: 0  Process: /registers_tb/main  File: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sim_1/new/registers_tb.vhd
+Error: Write in register failed for test 2
+Time: 70 ns  Iteration: 0  Process: /registers_tb/main  File: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sim_1/new/registers_tb.vhd
+Error: Write in register failed for test 3
+Time: 90 ns  Iteration: 0  Process: /registers_tb/main  File: /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sim_1/new/registers_tb.vhd
+$finish called at time : 90 ns : File "/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sim_1/new/registers_tb.vhd" Line 73
