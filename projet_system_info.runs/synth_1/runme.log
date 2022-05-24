@@ -21,242 +21,34 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3880
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2599.824 ; gain = 0.000 ; free physical = 18642 ; free virtual = 32456
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'CPU' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:25]
-INFO: [Synth 8-638] synthesizing module 'rom' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ROM.vhd:18]
-WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ROM.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'rom' (1#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ROM.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'decoder' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/decoder.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (2#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/decoder.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'registers' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/registers.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'registers' (3#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/registers.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'data_fetch' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/data_fetch.vhd:30]
-WARNING: [Synth 8-3848] Net addr_ram in module/entity data_fetch does not have driver. [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/data_fetch.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'data_fetch' (4#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/data_fetch.vhd:30]
-INFO: [Synth 8-638] synthesizing module 'alu' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ALU.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ALU.vhd:22]
-INFO: [Synth 8-638] synthesizing module 'write_back' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/write_back.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'write_back' (6#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/write_back.vhd:19]
-INFO: [Synth 8-638] synthesizing module 'branch_manager' [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/branch_manager.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'branch_manager' (7#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/branch_manager.vhd:23]
-WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:125]
-WARNING: [Synth 8-3848] Net data_ram in module/entity CPU does not have driver. [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'CPU' (8#1) [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:25]
-WARNING: [Synth 8-7129] Port clk in module write_back is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rst in module write_back is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module alu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rst in module alu is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[7] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[6] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[5] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[4] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[3] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[2] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[1] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port addr_ram[0] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rst in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_1[7] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_1[6] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_1[5] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_1[4] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_3[7] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_3[6] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_3[5] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port operand_3[4] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[7] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[6] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[5] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[4] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[3] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[2] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[1] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_ram[0] in module data_fetch is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module decoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rst in module decoder is either unconnected or has no load
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2599.824 ; gain = 0.000 ; free physical = 18394 ; free virtual = 32212
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2599.824 ; gain = 0.000 ; free physical = 19263 ; free virtual = 33081
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2599.824 ; gain = 0.000 ; free physical = 19263 ; free virtual = 33081
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2599.824 ; gain = 0.000 ; free physical = 19316 ; free virtual = 33135
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/constrs_1/new/constraint.xdc]
-Finished Parsing XDC File [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/constrs_1/new/constraint.xdc]
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.695 ; gain = 0.000 ; free physical = 19221 ; free virtual = 33052
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2663.695 ; gain = 0.000 ; free physical = 19221 ; free virtual = 33052
-WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19290 ; free virtual = 33121
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a35tcpg236-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19290 ; free virtual = 33121
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19290 ; free virtual = 33122
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19280 ; free virtual = 33114
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input    8 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 2     
-+---Registers : 
-	               32 Bit    Registers := 8     
-	                8 Bit    Registers := 17    
-+---Muxes : 
-	   2 Input    8 Bit        Muxes := 9     
-	   2 Input    4 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 16    
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 90 (col length:60)
-BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19275 ; free virtual = 33115
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19147 ; free virtual = 32994
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19147 ; free virtual = 32994
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19146 ; free virtual = 32994
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+-+-----+------+
-| |Cell |Count |
-+-+-----+------+
-+-+-----+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19143 ; free virtual = 32991
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2663.695 ; gain = 0.000 ; free physical = 19197 ; free virtual = 33045
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2663.695 ; gain = 63.871 ; free physical = 19197 ; free virtual = 33045
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.695 ; gain = 0.000 ; free physical = 19190 ; free virtual = 33038
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2663.695 ; gain = 0.000 ; free physical = 19225 ; free virtual = 33073
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Synth Design complete, checksum: 14f2f8d6
+INFO: [Synth 8-7075] Helper process launched with PID 6711
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2599.836 ; gain = 0.000 ; free physical = 17653 ; free virtual = 32367
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2029] formal addr_1 has no actual or default value [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:89]
+INFO: [Synth 8-994] addr_1 is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/registers.vhd:17]
+INFO: [Synth 8-994] addr_2 is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/registers.vhd:18]
+ERROR: [Synth 8-2029] formal data_c_in has no actual or default value [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:102]
+INFO: [Synth 8-994] data_c_in is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/pipeline.vhd:18]
+ERROR: [Synth 8-2029] formal opcode has no actual or default value [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:115]
+INFO: [Synth 8-994] opcode is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ALU.vhd:15]
+INFO: [Synth 8-994] data_a is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ALU.vhd:16]
+INFO: [Synth 8-994] data_b is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ALU.vhd:17]
+ERROR: [Synth 8-2029] formal data_c_in has no actual or default value [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:124]
+INFO: [Synth 8-994] data_c_in is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/pipeline.vhd:18]
+ERROR: [Synth 8-2029] formal addr has no actual or default value [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:138]
+INFO: [Synth 8-994] addr is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/memory_manager.vhd:16]
+INFO: [Synth 8-994] data_write is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/memory_manager.vhd:18]
+INFO: [Synth 8-994] opcode is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/memory_manager.vhd:19]
+ERROR: [Synth 8-2029] formal data_c_in has no actual or default value [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:148]
+INFO: [Synth 8-994] data_c_in is declared here [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/pipeline.vhd:18]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2599.836 ; gain = 0.000 ; free physical = 17397 ; free virtual = 32111
+---------------------------------------------------------------------------------
+RTL Elaboration failed
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 2663.695 ; gain = 64.031 ; free physical = 19428 ; free virtual = 33276
-INFO: [Common 17-1381] The checkpoint '/home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.runs/synth_1/CPU.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May  4 13:25:26 2022...
+21 Infos, 1 Warnings, 0 Critical Warnings and 7 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue May 17 16:08:50 2022...

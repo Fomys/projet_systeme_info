@@ -13,10 +13,11 @@ entity branch_manager is
     port (
         clk : in clk_t;
         rst : in rst_t;
+        block_ip : in std_logic;
         opcode : in opcode_t;
-        jmp_dst : in data_t;
-        data : in data_t;
-        pc : out address_t
+        dest : in data_t;
+        val : data_t;
+        ip : out address_t
     );
 end branch_manager;
 
@@ -26,11 +27,17 @@ begin
     begin
         if rising_edge(clk) then
             if rst = '1' then
-                pc <= (others => '0');
-            else
-                pc <= data_to_address(jmp_dst) when (opcode = OP_JMP) else
-                      data_to_address(jmp_dst) when (opcode = OP_JMZ) and (data = 0) else
-                      pc + 1;
+                ip <= (others => '0');
+            elsif block_ip = '0' then
+                if opcode = OP_JMP_I or
+                   opcode = OP_JMP then
+                    ip <= data_to_address(dest);
+                elsif opcode = OP_JMZ_I 
+                      and val = "0" then
+                    ip <= data_to_address(dest);
+                else
+                    ip <= ip + 1;
+                end if;
             end if;
         end if;
     end process;

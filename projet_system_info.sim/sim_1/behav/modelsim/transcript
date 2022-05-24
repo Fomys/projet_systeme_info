@@ -1,0 +1,330 @@
+do wave1.do
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU 
+# Start time: 17:43:36 on May 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading xil_defaultlib.types(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.cpu(behavioral)
+# Loading xil_defaultlib.branch_manager(behavioral)
+# Loading xil_defaultlib.rom(behavioral)
+# Loading xil_defaultlib.decoder(behavioral)
+# Loading xil_defaultlib.pipeline(behavioral)
+# Loading xil_defaultlib.alea_manager(behavioral)
+# Loading xil_defaultlib.registers(behavioral)
+# Loading xil_defaultlib.alu(behavioral)
+# Loading xil_defaultlib.memory_manager(behavioral)
+# Loading xil_defaultlib.write_back(behavioral)
+# 1
+# 1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do wave1.do
+# End time: 17:50:00 on May 24,2022, Elapsed time: 0:06:24
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU 
+# Start time: 17:50:00 on May 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading xil_defaultlib.types(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.cpu(behavioral)
+# Loading xil_defaultlib.branch_manager(behavioral)
+# Loading xil_defaultlib.rom(behavioral)
+# Loading xil_defaultlib.decoder(behavioral)
+# Loading xil_defaultlib.pipeline(behavioral)
+# Loading xil_defaultlib.alea_manager(behavioral)
+# Loading xil_defaultlib.registers(behavioral)
+# Loading xil_defaultlib.alu(behavioral)
+# Loading xil_defaultlib.memory_manager(behavioral)
+# Loading xil_defaultlib.write_back(behavioral)
+# 1
+# 1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do wave1.do
+# End time: 17:53:23 on May 24,2022, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU 
+# Start time: 17:53:23 on May 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading xil_defaultlib.types(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.cpu(behavioral)
+# Loading xil_defaultlib.branch_manager(behavioral)
+# Loading xil_defaultlib.rom(behavioral)
+# Loading xil_defaultlib.decoder(behavioral)
+# Loading xil_defaultlib.pipeline(behavioral)
+# Loading xil_defaultlib.alea_manager(behavioral)
+# Loading xil_defaultlib.registers(behavioral)
+# Loading xil_defaultlib.alu(behavioral)
+# Loading xil_defaultlib.memory_manager(behavioral)
+# Loading xil_defaultlib.write_back(behavioral)
+# 1
+# 1
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu/alea_manager_i/modified_register'.
+# Executing ONERROR command at macro ./wave1.do line 52
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do wave1.do
+# End time: 17:54:18 on May 24,2022, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU 
+# Start time: 17:54:18 on May 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading xil_defaultlib.types(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.cpu(behavioral)
+# Loading xil_defaultlib.branch_manager(behavioral)
+# Loading xil_defaultlib.rom(behavioral)
+# Loading xil_defaultlib.decoder(behavioral)
+# Loading xil_defaultlib.pipeline(behavioral)
+# Loading xil_defaultlib.alea_manager(behavioral)
+# Loading xil_defaultlib.registers(behavioral)
+# Loading xil_defaultlib.alu(behavioral)
+# Loading xil_defaultlib.memory_manager(behavioral)
+# Loading xil_defaultlib.write_back(behavioral)
+# 1
+# 1
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu/alea_manager_i/modified_register'.
+# Executing ONERROR command at macro ./wave1.do line 52
+add wave -position end  sim:/cpu/alea_manager_i/tmodified_register
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do wave1.do
+# End time: 17:59:40 on May 24,2022, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU 
+# Start time: 17:59:40 on May 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading xil_defaultlib.types(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.cpu(behavioral)
+# Loading xil_defaultlib.branch_manager(behavioral)
+# Loading xil_defaultlib.rom(behavioral)
+# Loading xil_defaultlib.decoder(behavioral)
+# Loading xil_defaultlib.pipeline(behavioral)
+# Loading xil_defaultlib.alea_manager(behavioral)
+# Loading xil_defaultlib.registers(behavioral)
+# Loading xil_defaultlib.alu(behavioral)
+# Loading xil_defaultlib.memory_manager(behavioral)
+# Loading xil_defaultlib.write_back(behavioral)
+# 1
+# 1
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu/alea_manager_i/modified_register'.
+# Executing ONERROR command at macro ./wave1.do line 52
+add wave -position end  sim:/cpu/alea_manager_i/tmodified_register
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/cpu/alea_manager_i/tmodified_register
+do wave1.do
+# End time: 18:09:33 on May 24,2022, Elapsed time: 0:09:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU 
+# Start time: 18:09:33 on May 24,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading xil_defaultlib.types(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.cpu(behavioral)
+# Loading xil_defaultlib.branch_manager(behavioral)
+# Loading xil_defaultlib.rom(behavioral)
+# Loading xil_defaultlib.decoder(behavioral)
+# Loading xil_defaultlib.pipeline(behavioral)
+# Loading xil_defaultlib.alea_manager(behavioral)
+# Loading xil_defaultlib.registers(behavioral)
+# Loading xil_defaultlib.alu(behavioral)
+# Loading xil_defaultlib.memory_manager(behavioral)
+# Loading xil_defaultlib.write_back(behavioral)
+# 1
+# 1
+# ** UI-Msg: (vish-4014) No objects found matching '/cpu/alea_manager_i/modified_register'.
+# Executing ONERROR command at macro ./wave1.do line 52
+add wave -position end  sim:/cpu/alea_manager_i/tmodified_register
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

@@ -6,11 +6,13 @@ use work.types.register_t;
 use work.types.register_array_t;
 use work.types.data_t;
 use work.types.address_t;
+use work.types.clk_t;
+use work.types.rst_t;
 
 entity registers is
     port ( 
-        clk : in std_logic;
-        rst : in std_logic;
+        clk : in clk_t;
+        rst : in rst_t;
         
         addr_1 : in register_t;
         addr_2 : in register_t;
@@ -18,8 +20,7 @@ entity registers is
         data_w : in data_t;
         w : in std_logic;
         data_1 : out data_t;
-        data_2 : out data_t;
-        pc : in address_t
+        data_2 : out data_t
     );
 end registers;
 
@@ -36,8 +37,6 @@ begin
             end if;
         end if;
     end process;
-    
-    registers(15) <= pc;
     
     data_1 <= registers(to_integer(unsigned(addr_1)));
     data_2 <= registers(to_integer(unsigned(addr_2)));

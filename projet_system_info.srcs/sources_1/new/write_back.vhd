@@ -11,8 +11,7 @@ entity write_back is
         clk : in clk_t;
         rst : in rst_t;
         opcode: in opcode_t;
-        w_registers : out std_logic;
-        w_ram : out std_logic
+        w_registers : out std_logic
     );
 end write_back;
 
@@ -22,11 +21,11 @@ begin
                          or (opcode = OP_ADD_I)
                          or (opcode = OP_SUB)
                          or (opcode = OP_SUB_I)
+                         or (opcode = OP_MUL)
+                         or (opcode = OP_MUL_I)
                          or (opcode = OP_CPY)
                          or (opcode = OP_LT)
                          or (opcode = OP_AFC)
                          or (opcode = OP_LDR) else
                    '0';
-    w_ram <= '1' when (opcode = OP_STR) else
-             '0';
 end architecture behavioral;

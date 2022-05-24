@@ -23,16 +23,20 @@ architecture behavioral of alu is
     signal add : data_t;
     signal sub : data_t;
     signal lt : data_t;
+    signal mul : data_t;
 begin
     add <= data_a + data_b;
     sub <= data_a - data_b;
     lt  <= "00000001" when data_a < data_b else
            "00000000";
+    mul <= data_a(3 downto 0) * data_b(3 downto 0);
 
     data_r <= add    when (opcode = OP_ADD)
                        or (opcode = OP_ADD_I) else
               sub    when (opcode = OP_SUB)
                        or (opcode = OP_SUB_I) else
+              mul    when (opcode = OP_MUL)
+                       or (opcode = OP_MUL_I) else
               lt     when (opcode = OP_LT) else
               data_a when (opcode = OP_AFC) 
                        or (opcode = OP_CPY)

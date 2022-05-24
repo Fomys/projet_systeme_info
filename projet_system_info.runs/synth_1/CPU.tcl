@@ -96,6 +96,8 @@ read_vhdl -vhdl2008 -library xil_defaultlib {
   /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/ROM.vhd
   /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/branch_manager.vhd
   /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/data_fetch.vhd
+  /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/memory_manager.vhd
+  /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/pipeline.vhd
   /home/fomys/Programmation/projets_insa/projet_system_info_new/projet_system_info/projet_system_info.srcs/sources_1/new/CPU.vhd
 }
 OPTRACE "Adding files" END { }
